@@ -26,7 +26,7 @@ $(OBJS) : %.o : %.f90
 $(TESTCODES) : %.F90 : %.pf
 	$(PFUNIT)/bin/pFUnitParser.py $< $@ -I$(PFUNIT)/include/
 
-$(TESTOBJS) : %.o : %.F90
+$(TESTOBJS) : %.o : %.F90 $(OBJS)
 	$(F90) -c -o $@ -I$(PFUNIT)/mod/ $<
 
 clean : 
