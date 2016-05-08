@@ -1,0 +1,6 @@
+@test
+subroutine test_correct()
+    use pfunit_mod
+    implicit none
+    @assertLessThan(1, 2)
+end subroutine test_correct
