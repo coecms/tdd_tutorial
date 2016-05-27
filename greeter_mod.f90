@@ -1,9 +1,9 @@
 module greeter_mod
     implicit none
     contains
-        function greeter(cAddressee)
+        function greeter(cAddressee, cGreeting)
             implicit none
-            character(len=*), intent(in), optional :: cAddressee
+            character(len=*), intent(in), optional :: cAddressee, cGreeting
             character(len=50) :: greeter
             character(len=30) :: myAddressee
             if (present(cAddressee)) then

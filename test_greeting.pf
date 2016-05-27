@@ -13,3 +13,11 @@ subroutine test_pluto()
     implicit none
     @assertEqual("Hello Pluto", greeter(cAddressee = "Pluto"))
 end subroutine test_pluto
+
+@test
+subroutine test_howdy()
+    use pfunit_mod
+    use greeter_mod
+    implicit none
+    @assertEqual("Howdy World", greeter(cGreeting = "Howdy"))
+end subroutine test_howdy
