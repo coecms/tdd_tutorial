@@ -1,6 +1,7 @@
 @test
 subroutine test_correct()
     use pfunit_mod
+    use greeter_mod
     implicit none
-    @assertLessThan(1, 2)
+    @assertEqual("Hello World", greeter())
 end subroutine test_correct
