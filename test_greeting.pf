@@ -2,5 +2,5 @@
 subroutine test_correct()
     use pfunit_mod
     implicit none
-    @assertLessThan(1, 2)
+    @assertLessThan(1, 1)
 end subroutine test_correct
