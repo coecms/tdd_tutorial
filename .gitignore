@@ -1,5 +1,4 @@
 *.F90
 *.o
 *.mod
-tests.x
 testSuites.inc
