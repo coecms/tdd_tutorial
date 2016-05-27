@@ -10,7 +10,7 @@ module greeter_mod
             if (present(cGreeting)) then
                 myGreeting = cGreeting
             else
-                myGreeting = "hello"
+                myGreeting = "Hello"
             end if
             if (present(cAddressee)) then
                 myAddressee = cAddressee
