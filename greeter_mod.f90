@@ -4,6 +4,6 @@ module greeter_mod
         function greeter()
             implicit none
             character(len=50) :: greeter
-            greeter = ""
+            greeter = "Hello World"
         end function greeter
 end module greeter_mod
