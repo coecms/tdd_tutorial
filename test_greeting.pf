@@ -1,7 +1,7 @@
 @test
-subroutine test_correct()
+subroutine test_no_params()
     use pfunit_mod
     use greeter_mod
     implicit none
     @assertEqual("Hello World", greeter())
-end subroutine test_correct
+end subroutine test_no_params
