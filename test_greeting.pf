@@ -1,10 +1,10 @@
 @test
-subroutine test_correct()
+subroutine test_hello()
     use pfunit_mod
     use greeter_mod
     implicit none
     @assertEqual("Hello World", greeter())
-end subroutine test_correct
+end subroutine test_hello
 
 @test
 subroutine test_pluto()
